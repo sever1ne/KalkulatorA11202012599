@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/article_subheading"
+        tools:layout_editor_absoluteX="-31dp"
+        tools:layout_editor_absoluteY="84dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:text="Kalkulator Bidang Datar"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panjang Sisi/Alas Segitiga/Diameter"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="193dp" />
+
+            <EditText
+                android:id="@+id/sisifield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="numberDecimal"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="193dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lebar Persegi/Tinggi Segitiga"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="252dp" />
+
+            <EditText
+                android:id="@+id/tinggifield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="numberDecimal"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="252dp" />
+
+            <Button
+                android:id="@+id/perseg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="persegi"
+                android:text="Persegi"
+                tools:layout_editor_absoluteX="160dp"
+                tools:layout_editor_absoluteY="469dp" />
+
+            <Button
+                android:id="@+id/segit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="segitiga"
+                android:text="Segitiga"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="533dp" />
+
+            <Button
+                android:id="@+id/ling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="lingkaran"
+                android:text="Lingkaran"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="595dp" />
+
+            <TextView
+                android:id="@+id/keliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelilingnya adalah ="
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="655dp" />
+
+            <TextView
+                android:id="@+id/luas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas nya adalah    = "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="696dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
